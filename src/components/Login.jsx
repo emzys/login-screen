@@ -6,9 +6,7 @@ function Login(params) {
     <form className="form">
       <Input type="text" placeholder="Username" />
       <Input type="password" placeholder="Password" />
-      {!params.isRegistered && (
-        <Input type="password" placeholder="Confirm Password" />
-      )}
+      {!params.isRegistered && <Input type="password" placeholder="Confirm Password" />}
       <button type="submit">
         {params.isRegistered ? "Login" : "Register"}
       </button>
